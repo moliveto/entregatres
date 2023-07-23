@@ -1,0 +1,11 @@
+npm install -g sass
+
+sass --watch ./scss/style.scss ./css/style.css
+
+npm init -y
+
+npm install -D node-sass nodemon
+
+npm run build-sass
+
+npm run watch-sass

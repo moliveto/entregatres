@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh; }
+
+header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.05); }
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; }
+
+main {
+  height: 75vh;
+  background-image: url(../assets/img/intro-background.webp); }
+  main h1 {
+    color: #301047;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px; }
+  main p {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+
+footer {
+  height: 10vh; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+nav li {
+  padding: 2px;
+  font-size: 1.5rem;
+  display: inline-block; }
+
+nav a {
+  text-decoration: none; }

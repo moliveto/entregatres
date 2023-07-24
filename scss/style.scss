@@ -5,7 +5,7 @@
 }
 
 @import "variables";
-@import "encabezado";
+@import "header";
 @import "navbar";
 @import "main";
 @import "formulario";
@@ -13,10 +13,6 @@
 
 body {
   height: 100vh;
-}
-
-main {
-  height: 80vh;
 }
 
 footer {

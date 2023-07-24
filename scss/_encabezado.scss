@@ -1,0 +1,21 @@
+/* TODO: --- Encabezado --- */
+
+header {
+  height: 10vh;
+  width: 100%;
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.05);
+}
+
+#principalFondo {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+#principalTitulo {
+  color: $letraprincipal;
+  text-shadow: 10px 10px 30px $letraprincipal;
+  margin: 25px auto 20px 40px;
+}

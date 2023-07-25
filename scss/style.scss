@@ -21,7 +21,6 @@ footer {
 
 main {
   height: 75vh;
-  background-image: url(../assets/img/intro-background.webp);
 
   h1 {
     color: #301047;
@@ -39,6 +38,10 @@ main {
     margin-top: 0;
     margin-bottom: 1rem;
   }
+}
+
+.main {
+  background-image: url(../assets/img/intro-background.webp);
 }
 
 footer {

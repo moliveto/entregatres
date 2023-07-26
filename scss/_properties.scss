@@ -1,0 +1,184 @@
+.card:not(.card-default) {
+    border-radius: 14px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 40px 0 rgba(0,0,0,.2);
+    width: 100%
+}
+
+.card:not(.card-default) .card-body {
+    padding: 15px 20px
+}
+
+.card:not(.card-default) .card-body>.card-title h6 {
+    color: #8e8e93;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .43px;
+    text-transform: uppercase
+}
+
+.card:not(.card-default) .card-img-top {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px
+}
+
+.card:not(.card-default).card-option {
+    cursor: pointer
+}
+
+.card:not(.card-default).card-flex {
+    width: 100%
+}
+
+.card:not(.card-default).card-flex>div.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
+}
+
+.card:not(.card-default).card-property,.card:not(.card-default) .card-link {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden
+}
+
+.card:not(.card-default).card-property .property-type,.card:not(.card-default) .card-link .property-type {
+    text-align: center;
+    background: #57068c;
+    color: #fff;
+    padding: 2px 3px 3px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+.card:not(.card-default).card-property .property-type.property-type-entire,.card:not(.card-default) .card-link .property-type.property-type-entire {
+    background: #a1297e
+}
+
+.card:not(.card-default).card-property .property-image-container,.card:not(.card-default) .card-link .property-image-container {
+    height: 200px;
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.card:not(.card-default).card-property .property-image-container .property-image,.card:not(.card-default).card-property .property-image-container .property-image-overlay,.card:not(.card-default).card-property .property-image-container .property-image-overlay-content,.card:not(.card-default) .card-link .property-image-container .property-image,.card:not(.card-default) .card-link .property-image-container .property-image-overlay,.card:not(.card-default) .card-link .property-image-container .property-image-overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.card:not(.card-default).card-property .property-image-container .property-image,.card:not(.card-default) .card-link .property-image-container .property-image {
+    filter: grayscale(1);
+    z-index: 1;
+    background-size: cover;
+    background-position: center
+}
+
+.card:not(.card-default).card-property .property-image-container .property-image-overlay,.card:not(.card-default) .card-link .property-image-container .property-image-overlay {
+    background: #5b337e;
+    opacity: .75;
+    mix-blend-mode: multiply;
+    z-index: 2;
+    display: flex;
+    align-self: center
+}
+
+.card:not(.card-default).card-property .property-image-container .property-image-overlay-content,.card:not(.card-default) .card-link .property-image-container .property-image-overlay-content {
+    top: 50%;
+    text-align: center;
+    height: auto;
+    z-index: 3;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1px
+}
+
+.card:not(.card-default).card-property .card-body,.card:not(.card-default) .card-link .card-body {
+    padding: 30px 20px
+}
+
+.card:not(.card-default).card-property .card-body .property-location,.card:not(.card-default) .card-link .card-body .property-location {
+    text-transform: uppercase;
+    font-size: 12px
+}
+
+.card:not(.card-default).card-property .card-body .property-name,.card:not(.card-default) .card-link .card-body .property-name {
+    color: #57068c;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px
+}
+
+.card:not(.card-default).card-property .card-body .property-value,.card:not(.card-default) .card-link .card-body .property-value {
+    color: #57068c;
+    font-weight: 600
+}
+
+.card:not(.card-default).card-property .card-body .property-roi,.card:not(.card-default) .card-link .card-body .property-roi {
+    color: #57068c;
+    font-weight: 600;
+    font-size: 40px
+}
+
+.card:not(.card-default).card-property.card-property-live .property-image-container .property-image,.card:not(.card-default) .card-link.card-property-live .property-image-container .property-image {
+    filter: none
+}
+
+.card:not(.card-default).card-property.card-property-live .property-image-container .property-image-overlay,.card:not(.card-default) .card-link.card-property-live .property-image-container .property-image-overlay {
+    display: none
+}
+
+.progress.progress-property {
+    height: 10px;
+    margin: 40px 0 3px;
+    overflow: visible;
+    border-radius: .5rem;
+    background: #e3d9ea
+}
+
+.progress.progress-property .progress-bar {
+    background: #008f9f;
+    position: relative;
+    border-radius: .5rem
+}
+
+.progress.progress-property .progress-bar:after {
+    color: #57068c;
+    font-weight: 600;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 2px;
+    right: 0;
+    left: 0;
+    content: attr(aria-valuenow) "%";
+    font-size: 14px;
+    text-align: right
+}
+
+.progress.progress-property.progress-property-live .progress-bar {
+    background: #008f9f
+}
+
+.progress.progress-property.progress-property-live .progress-bar::after {
+    color: #008f9f
+}
+
+.progress.progress-property.progress-property-live .progress-bar[aria-valuenow="0"]:after {
+    color: #e3d9ea
+}
+
+.progress.progress-property.progress-property-funded .progress-bar {
+    background: #a1297e
+}
+
+.progress.progress-property.progress-property-funded .progress-bar::after {
+    color: #a1297e
+}

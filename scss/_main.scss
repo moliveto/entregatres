@@ -1,5 +1,26 @@
 main {
   height: 80vh;
+
+  h1 {
+    color: #301047;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px;
+  }
+
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.main {
+  background-image: url(../assets/img/intro-background.webp);
 }
 
 .btn.btn-cta {

@@ -23,15 +23,15 @@
 
 <body>
     <!-- Header -->
-    <header class="encabezado">
+    <header class="sticky-top">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <a href="./index.html">
                     <img src="./assets/img/logo.webp" alt="Logo" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -51,8 +51,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/contact.html">Contacto</a>
                         </li>
-
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Español
@@ -62,7 +61,7 @@
                                 <li><a class="dropdown-item" href="#">Español</a></li>
                                 <li><a class="dropdown-item" href="#">Portugües</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -72,65 +71,98 @@
 
     <!-- Main -->
     <main class="main">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>Inversion inmobiliaria sin complicaciones</h1>
-                <p>
-                    La manera fácil, sin complicaciones de construir un portafolio internacional en bienes raíces desde
-                    US$
-                    1.000
-                </p>
-                <a href="/es/registrate/" class="btn btn-cta">Regístrate para ver las propiedades disponibles</a>
-            </div>
+        <div class="container-fluid">
+            <section>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Inversion inmobiliaria sin complicaciones</h1>
+                        <p>
+                            La manera fácil, sin complicaciones de construir un portafolio internacional en bienes
+                            raíces desde
+                            US$
+                            1.000
+                        </p>
+                        <a href="/es/registrate/" class="btn btn-cta">Regístrate para ver las propiedades
+                            disponibles</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>¿Por qué invertir en inmuebles?</h2>
+                        <p>
+                            A lo largo del tiempo, el sector inmobiliario ha sido una estrategia de inversión
+                            consistente, estable y rentable. Además, la inversión inmobiliaria ha superado a los
+                            mercados de acciones y bonos a largo plazo. Anteriormente, estas atractivas oportunidades de
+                            inversión solo estaban disponibles para inversores profesionales, personas de altos ingresos
+                            e inversores institucionales.
+
+                            Combinando tecnología de vanguardia con años de expertise en bienes raíces; nuestra
+                            plataforma de crowdfunding provee acceso a oportunidades de activos seguros elegidos para tí
+                            en el mundo.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>¿Por qué invertir en crowdfunding inmobiliario?</h2>
+                        <p>
+                            Si eres un inversor novato o experimentado, puedes invertir con en solo unos
+                            minutos, comenzando desde solo US$ 1,000. Los inversores financian colectivamente la compra
+                            de una propiedad y los ingresos se generan a partir de los ingresos por alquileres. Además,
+                            el valor de la propiedad puede aumentar durante el plazo de la inversión, que se distribuirá
+                            a los inversores tan pronto como se venda la propiedad.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
     <!-- footer -->
-    <footer class="container-fluid">
-        <div class="row align-items-center">
-            <!-- TODO: PRIMERA COLUMNA - BARRA DE NAVEGACIÓN -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xs-12 col-md-4 col-lg-8">
+                    <nav class="navbar barra navbar-expand-lg">
+                        <div class="container justify-content-center">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/howwork.html">Cómo funciona</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/properties.html">Propiedades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/about.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/faq.html">Preguntas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
 
-            <div class="col-xs-12 col-md-4 col-lg-8">
-                <nav class="navbar barra navbar-expand-lg">
-                    <div class="container justify-content-center">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/howwork.html">Cómo funciona</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/properties.html">Propiedades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/about.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/faq.html">Preguntas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contact.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+                <!-- TODO: SEGUNDA COLUMNA - DERECHOS -->
+                <div class="col-xs-12 col-md-4 col-lg-2">
+                    <h6>Derechos Reservados</h6>
+                </div>
 
-            <!-- TODO: SEGUNDA COLUMNA - DERECHOS -->
-            <div class="col-xs-12 col-md-4 col-lg-2">
-                <h6>Derechos Reservados</h6>
-
-            </div>
-
-            <!-- TODO: TERCERA COLUMNA - BARRA REDES SOCIALES -->
-            <div class="col-xs-12 col-md-4 col-lg-2 iconos">
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i
-                        class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-instagram"></i></a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                    <i class="bi bi-twitter"></i></a>
+                <!-- TODO: TERCERA COLUMNA - BARRA REDES SOCIALES -->
+                <div class="col-xs-12 col-md-4 col-lg-2 iconos">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-twitter"></i></a>
+                </div>
             </div>
         </div>
     </footer>

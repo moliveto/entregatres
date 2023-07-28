@@ -1,11 +1,11 @@
 main {
-  height: 80vh;
+  //height: 80vh;
 
   h1 {
     color: #301047;
-    font-size: 50px;
-    font-weight: 900;
-    line-height: 60px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
   }
 
   p {
@@ -19,9 +19,15 @@ main {
   }
 }
 
+section {
+  padding: 30px 0;
+}
+
 .main {
   background-image: url(../assets/img/intro-background.webp);
 }
+
+
 
 .btn.btn-cta {
   border-radius: 100px;

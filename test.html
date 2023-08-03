@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox con sección y divs</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #e0f2ff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .div-arriba, .div-abajo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .div-arriba {
+      background-color: #00a5ff;
+      color: #fff;
+      padding: 20px;
+      flex-direction: column;
+    }
+
+    .div-abajo {
+      background-color: #d8aaff;
+      padding: 20px;
+      flex-direction: row;
+    }
+
+    .caja {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+    }
+
+    .caja-celeste {
+      background-color: #00a5ff;
+    }
+
+    .caja-violeta {
+      background-color: #d8aaff;
+    }
+
+    .caja-verde-agua {
+      background-color: #a2c8c4;
+      position: relative;
+    }
+
+    .burbuja {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #a2c8c4;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    img {
+      width: 100px;
+      height: auto;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="div-arriba">
+      <h2>Título en azul</h2>
+      <h3>Subtítulo en blanco</h3>
+    </div>
+    <div class="div-abajo">
+      <div class="caja caja-violeta">
+        <p>Texto</p>
+      </div>
+      <div class="caja caja-celeste">
+        <p>Otro texto</p>
+      </div>
+      <div class="caja caja-verde-agua">
+        <div class="burbuja"></div>
+      </div>
+      <img src="./assets/img/156 S Kossuth. Baltimore.png" alt="Casa con sombra">
+    </div>
+  </section>
+</body>
+</html>

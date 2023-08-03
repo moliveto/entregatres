@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +8,12 @@
 header {
   height: 10vh;
   width: 100%;
-  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.05); }
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.05);
+  align-items: flex-start; }
+
+.logo {
+  vertical-align: top;
+  align-items: baseline; }
 
 #principalFondo {
   width: 100%;
@@ -91,10 +97,16 @@ main p {
   margin-bottom: 1rem; }
 
 section {
-  padding: 30px 0; }
+  padding: 1rem 0 0 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Ajusta el color de fondo y la opacidad según sea necesario */ }
 
 .main {
-  background-image: url(../assets/img/intro-background.webp); }
+  background-image: url(../assets/img/barrio-residencial.webp);
+  background-repeat: no-repeat;
+  background-position: top right;
+  transition: background-size 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
 
 .btn.btn-cta {
   border-radius: 100px;

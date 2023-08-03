@@ -4,6 +4,12 @@ header {
   height: 10vh;
   width: 100%;
   box-shadow: 1px 1px 10px 0 rgba(0,0,0,.05);
+  align-items: flex-start;
+}
+
+.logo {
+  vertical-align: top;
+  align-items: baseline;
 }
 
 #principalFondo {

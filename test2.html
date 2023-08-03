@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox con dos divs y una imagen</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 40vh;
+            width: 100vh;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background-image: url("./assets/img/Baltimore_City_Hall_crop.jpg");
+            background-repeat: no-repeat;
+            background-size: 50vh;
+            background-position: top right;
+        }
+
+        .div-arriba {
+            height: 40vh;
+            width: 50vh;
+            align-content: end;
+            background-color: #a4bee1;
+        }
+
+        .div-abajo {
+            height: 40vh;
+            width: 50vh;
+            background-color: transparent;
+        }
+
+        #titulo {
+            color: #032362;
+            font-weight: 800;
+            font-size: calc(1.6rem + 0.7vw);
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 0.4375rem;
+            padding: 0;
+            margin: 0 0 0 1rem; 
+            /*arriba derecha abajo izq*/
+        }
+
+        #subtitulo {
+            color: white;
+            font-weight: 400;
+            text-align: left;
+            text-transform: uppercase;
+            padding: 0;
+            margin: 0 0 0 1rem; 
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div-arriba">
+            <h1 id="titulo">BALTIMORE</h1>
+            <h2 id="subtitulo">OPORTUNIDAD DE INVERSIÓN</h2>
+        </div>
+        <div class="div-abajo">
+            <h2>Contenido del div de abajo</h2>
+        </div>
+        <img src="./assets/img/Baltimore_City_Hall_crop.jpg" alt="Imagen con sombra">
+    </div>
+</body>
+
+</html>
